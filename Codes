@@ -10,7 +10,7 @@ with plt.xkcd():
   ax.set_xlim([0, 110])
   ax.set_ylim([-80, 65])
 
-  data = np.ones(120)https://github.com/WakandaGeoscientist/Plotting-xkcd-style-figure/blob/main/Codes
+  data = np.ones(120)
   data[5:30] -= np.arange(25)
   data[70:] -= np.arange(50)
 
