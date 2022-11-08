@@ -1,3 +1,4 @@
+# xkcd plot goes here
 with plt.xkcd():
 
   fig = plt.figure()
@@ -9,7 +10,7 @@ with plt.xkcd():
   ax.set_xlim([0, 110])
   ax.set_ylim([-80, 65])
 
-  data = np.ones(120)
+  data = np.ones(120)https://github.com/WakandaGeoscientist/Plotting-xkcd-style-figure/blob/main/Codes
   data[5:30] -= np.arange(25)
   data[70:] -= np.arange(50)
 
@@ -19,9 +20,7 @@ with plt.xkcd():
 
   ax.set_xlabel('time')
   ax.set_ylabel('Stress Levels')
-  fig.text(
-        0.5, 0.05,
-        'Stress trend ever since\nI started learning Python',
-        ha='center')
+  fig.text(0.4, 0.01, 'Stress trend ever since\nI started learning Python', ha='center')
+  fig.text(0.15, 0.75, 'Developed by David Nworie', va='center')
 
   plt.show()
